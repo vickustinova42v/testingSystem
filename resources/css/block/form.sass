@@ -1,0 +1,47 @@
+.form
+    display: flex
+    flex-direction: column
+
+.form__input,
+.form__button
+    outline: none
+    border: none
+    height: 50px
+    border-radius: 5px
+    font-size: 16px
+    margin-bottom: 10px
+    overflow: hidden
+    @media screen and (max-width: 768px)
+        height: 40px
+
+.form__label
+    font-weight: 700
+    font-size: 15px
+    color: $blue
+
+.form__input
+    border: 2px solid $gray
+    padding: 0 10px
+    &:focus
+        border: 2px solid $blue
+
+.form__button
+    color: $white
+    font-weight: 700
+    background-color: $blue
+    &:focus,
+    &:hover
+        background-color: $black
+
+.form__error,
+.form__success
+    font-weight: 700
+    font-size: 16px
+    margin-bottom: 5px
+
+.form__error
+    color: $red
+
+.form__success
+    color: $green
+

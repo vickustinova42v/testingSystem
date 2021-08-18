@@ -1,0 +1,82 @@
+@import "resources/css/imports/import"
+@import "layout/header"
+@import "layout/footer"
+@import "layout/main"
+@import "block/button"
+@import "block/form"
+@import "block/test"
+
+.test
+    max-width: 700px
+    width: 100%
+    margin: 25px auto
+
+.form__wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+.test__question-wrapper,
+.form__test-number-input
+    width: 100%
+
+.test__question-wrapper + .test__question-wrapper
+    margin-left: 10px
+
+.form__test-wrapper
+    justify-content: start
+    margin: 10px 0
+
+.test__topics-label
+    margin-left: 10px
+
+.variants
+    width: 100%
+    padding: 0 10px
+    border-radius: 5px
+    margin-bottom: 10px
+    border: 2px solid $gray
+    &:focus-within
+        border: 2px solid $blue
+    @media print
+        position: absolute
+        top: 0
+        border: none
+        &:focus-within
+            border: none
+
+.variants__title
+    width: 100%
+    font-weight: 700
+    font-size: 20px
+    padding: 10px 0
+    color: $blue
+    outline: none
+    cursor: pointer
+    list-style: none
+    &::-webkit-details-marker
+        display: none
+        visibility: hidden
+        height: 0
+    @media print
+        text-align: center
+
+
+@media print
+    form,
+    a,
+    header,
+    footer,
+    button,
+    h1
+        visibility: hidden
+        height: 0
+        font-size: 0
+        padding: 0
+        margin: 0
+        position: absolute
+        top: 0
+
+
+

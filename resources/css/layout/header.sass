@@ -1,0 +1,103 @@
+.header
+    background-color: $blue
+    min-height: 50px
+    height: 50px
+
+.header__wrapper
+    height: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.nav
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 25px
+    @media screen and (max-width: 990px)
+        display: none
+        position: fixed
+        left: 0
+        top: 0
+        height: 100%
+        flex-direction: column
+        align-items: flex-start
+        padding: 10px
+        gap: 15px
+        justify-content: center
+        background-color: $darkBlue
+
+.nav__mobile
+    display: flex
+
+.burger
+    display: none
+    height: 18px
+    width: 30px
+    background-color: transparent
+    border: none
+    @media screen and (max-width: 990px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
+
+.burger__line
+    width: 100%
+    height: 2px
+    background-color: $white
+
+.burger__mobile
+    height: 25px
+    width: 25px
+    position: fixed
+    left: 10px
+    top: 10px
+    z-index: 2
+
+.nav__item,
+.header__button
+    color: $white
+    font-size: 16px
+
+.header__button
+    margin-left: auto
+    font-weight: 700
+    max-width: 120px
+    width: 100%
+    height: 30px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    background-color: $darkBlue
+    border-radius: 5px
+    &:hover,
+    &:focus
+        outline: none
+        background-color: $white
+        color: $black
+
+.nav__item
+    &:hover
+        text-decoration: underline
+
+.burger__line--start
+    position: absolute
+    top: 50%
+    width: 25px
+    right: 0
+    transform: rotate(-45deg) translateY(-50%)
+
+.burger__line--center
+    display: none
+
+.burger__line--end
+    position: absolute
+    width: 25px
+    top: 50%
+    right: 0
+    transform: rotate(45deg) translateY(-50%)
+
+

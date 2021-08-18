@@ -1,0 +1,35 @@
+@import "resources/css/imports/import"
+@import "layout/header"
+@import "layout/footer"
+@import "layout/main"
+@import "block/button"
+@import "block/form"
+
+.question
+    max-width: 700px
+    width: 100%
+    margin: 25px auto
+    @media screen and (max-width: 768px)
+        margin: 15px 0
+
+.form__wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+.form__wrapper + .form__wrapper
+    margin-top: 5px
+
+.question__input
+    margin: 0 10px
+    width: 100%
+
+.form__textarea
+    height: 75px
+    overflow: auto
+    resize: vertical
+    padding: 10px
+
+.question__variants-list
+    margin-bottom: 15px

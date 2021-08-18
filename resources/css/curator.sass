@@ -1,0 +1,28 @@
+@import "resources/css/imports/import"
+@import "layout/header"
+@import "layout/footer"
+@import "layout/main"
+@import "block/button"
+@import "block/card"
+
+.card__block
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    gap: 10px
+
+.curator__card
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    @media screen and (max-width: 468px)
+        align-items: flex-start
+        flex-direction: column
+
+.curator__button
+    @media screen and (max-width: 468px)
+        margin-top: 10px
+
+

@@ -1,0 +1,31 @@
+@import "resources/css/imports/import"
+@import "layout/header"
+@import "layout/footer"
+@import "layout/main"
+@import "block/button"
+@import "block/card"
+
+.card__block--question
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    gap: 10px
+
+.question__card
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.form__error,
+.form__success
+    font-weight: 700
+    font-size: 16px
+    margin-bottom: 5px
+
+.form__error
+    color: $red
+
+.form__success
+    color: $green
