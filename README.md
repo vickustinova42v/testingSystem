@@ -4,9 +4,8 @@
 
 Для работы проекта необходимо выполнить команды:
 
--composer install
--php artisan migrate
--php artisan db:seed
-
--npm install
--npm run watch
+-composer install;
+-php artisan migrate;
+-php artisan db:seed;
+-npm install;
+-npm run watch;
